@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { t } from "../../../i18n/utils/translate";
+import { locale } from "../../../i18n/store";
 import { ref, watchEffect, onBeforeUnmount } from "vue";
 import gsap from "gsap";
 import AppearingText from "../../../components/AppearingText.vue";
@@ -104,7 +105,7 @@ const handleTimelineCreated = (timeline: gsap.core.Timeline, delay: number) => {
       <div class="box-details-content">
         <div class="box-details-title">
           <AppearingText
-            text="世豪"
+            :text="locale === 'zh' ? '世豪' : 'Shihao'"
             :steps="1"
             :duration="0.35"
             @timeline:created="(tl: gsap.core.Timeline) => handleTimelineCreated(tl, 0)"

@@ -100,7 +100,7 @@ const showAttribution = import.meta.env.VITE_SHOW_ATTRIBUTION !== "false";
             >
           </Clickable>
         </div>
-        <p>© {{ new Date().getFullYear() }} 孙世豪</p>
+        <p>© {{ new Date().getFullYear() }} {{ locale === 'zh' ? '孙世豪' : 'Sun Shihao' }}</p>
       </div>
     </div>
   </footer>

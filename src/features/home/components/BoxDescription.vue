@@ -5,6 +5,7 @@ import { BREAKPOINTS } from "../../../utils/sizes";
 import { Vector3 } from "three";
 import ProjectedElement from "../../../components/ProjectedElement.vue";
 import { t } from "../../../i18n/utils/translate";
+import { locale } from "../../../i18n/store";
 import AppearingText from "../../../components/AppearingText.vue";
 import PinIcon from "../../../components/icons/Pin.vue";
 
@@ -99,7 +100,7 @@ const handleTimelineCreated = (timeline: gsap.core.Timeline, delay: number) => {
     <div ref="wrapperRef" class="box-description">
       <div class="box-description-content">
         <div class="box-description-details">
-          <p class="box-description-details-name">世豪</p>
+          <p class="box-description-details-name">{{ locale === 'zh' ? '世豪' : 'Shihao' }}</p>
           <div class="box-description-details-location">
             <PinIcon class="box-description-details-location-icon" />
             <p class="box-description-details-location-copy">{{ t("germany") }}</p>

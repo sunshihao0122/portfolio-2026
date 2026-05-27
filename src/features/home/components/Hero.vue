@@ -3,6 +3,7 @@ import Button from "../../../components/Button.vue";
 import Banner from "../../../components/Banner.vue";
 import { preloaderVisible } from "../../../composables/usePreloader";
 import { t } from "../../../i18n/utils/translate";
+import { locale } from "../../../i18n/store";
 import AppearingText from "../../../components/AppearingText.vue";
 </script>
 
@@ -11,7 +12,8 @@ import AppearingText from "../../../components/AppearingText.vue";
     <div class="hero-content grid">
       <div class="hero-content-inner" id="hero-content-inner">
         <div class="hero-content-copys">
-          <h1 class="hero-title">孙<br />世豪</h1>
+          <h1 class="hero-title" v-if="locale === 'zh'">孙<br />世豪</h1>
+          <h1 class="hero-title" v-else>Sun<br />Shihao</h1>
           <Banner class="hero-banner" :copy="t('job-title')" v-if="!preloaderVisible" animated />
         </div>
       </div>
