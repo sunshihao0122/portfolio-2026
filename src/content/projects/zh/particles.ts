@@ -7,20 +7,20 @@ import particles2 from "../../../assets/images/projects/particles/particles-2.we
 import type { ProjectContent } from "../../types";
 
 export default {
-  title: "WebGL Particles",
+  title: "WebGL 粒子",
   theme: "dark",
   tags: ["ogl", "javascript", "glsl"],
   live: "https://particles.david-hckh.com/",
   videoBorder: false,
   description:
-    "Ein experimentelles WebGL-Projekt mit OGL.js, das Partikel mithilfe mathematischer Formeln und Noise-Funktionen animiert.<br/><br/>Die Partikel bewegen sich fließend zwischen verschiedenen 3D-Formen, die ineinander übergehen.",
+    "一个基于 OGL.js 的 WebGL 实验项目，通过数学公式和噪声函数驱动粒子动画。<br/><br/>粒子在不同的 3D 形状之间平滑过渡，呈现出流畅的视觉效果。",
   components: [
     {
       type: "media",
       props: {
         type: "video",
         src: videoParticles,
-        caption: "Animiertes Partikelsystem",
+        caption: "粒子动画系统",
       },
     },
     {
@@ -28,8 +28,8 @@ export default {
       props: {
         type: "image",
         src: particles0,
-        alt: "Knoten Form",
-        caption: "Knoten Form",
+        alt: "节点形状",
+        caption: "节点形状",
       },
     },
     {
@@ -37,8 +37,8 @@ export default {
       props: {
         type: "image",
         src: particles1,
-        alt: "Donut Form",
-        caption: "Donut Form",
+        alt: "环形形状",
+        caption: "环形形状",
       },
     },
     {
@@ -46,8 +46,8 @@ export default {
       props: {
         type: "image",
         src: particles2,
-        alt: "Kugel Form",
-        caption: "Kugel Form",
+        alt: "球形形状",
+        caption: "球形形状",
       },
     },
   ],

@@ -16,14 +16,14 @@ export default {
   videoBorder: false,
   live: "https://cubewar.io",
   description:
-    "CubeWar ist ein browserbasiertes Multiplayer-Spiel, in dem Spieler in schnellen, strategischen Kämpfen gegeneinander antreten.<br/><br/>Ich habe den gesamten Stack selbst entwickelt, inklusive der Spiel-Engine, des Client-Timeline-Systems und des Echtzeit-Netzwerks mit Redis-basiertem Matchmaking für flüssiges Gameplay.",
+    "CubeWar 是一款基于浏览器的多人对战游戏，玩家在快节奏的策略战斗中互相竞技。<br/><br/>我独立开发了完整的技术栈，包括游戏引擎、客户端时间线系统以及基于 Redis 匹配机制的实时网络通信，确保流畅的游戏体验。",
   components: [
     {
       type: "media",
       props: {
         type: "video",
         src: videoCubeWar,
-        caption: "Gameplay",
+        caption: "游戏演示",
       },
     },
     {
@@ -31,8 +31,8 @@ export default {
       props: {
         type: "image",
         src: cubewar0,
-        alt: "Tutorial",
-        caption: "Tutorial",
+        alt: "新手教程",
+        caption: "新手教程",
       },
     },
     {
@@ -40,8 +40,8 @@ export default {
       props: {
         type: "image",
         src: cubewar1,
-        alt: "Karten Themen",
-        caption: "Karten Themen",
+        alt: "地图主题",
+        caption: "地图主题",
       },
     },
     {
@@ -49,8 +49,8 @@ export default {
       props: {
         type: "image",
         src: cubewar2,
-        alt: "Authentifizierung",
-        caption: "Authentifizierung",
+        alt: "用户认证",
+        caption: "用户认证",
       },
     },
     {
@@ -58,8 +58,8 @@ export default {
       props: {
         type: "image",
         src: cubewar3,
-        alt: "Responsives Design",
-        caption: "Responsives Design",
+        alt: "响应式设计",
+        caption: "响应式设计",
       },
     },
     {
@@ -67,8 +67,8 @@ export default {
       props: {
         type: "image",
         src: cubewar4,
-        alt: "Mehrere Spielmodi",
-        caption: "Mehrere Spielmodi",
+        alt: "多种游戏模式",
+        caption: "多种游戏模式",
       },
     },
     {
@@ -76,8 +76,8 @@ export default {
       props: {
         type: "image",
         src: cubewar5,
-        alt: "Party-System",
-        caption: "Party-System",
+        alt: "组队系统",
+        caption: "组队系统",
       },
     },
   ],
